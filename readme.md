@@ -12,18 +12,22 @@ composer require phpoffice/phpspreadsheet
 
 The system reports on the following:
 
-- Publication
+- Publication Field
   - checks if it was provided
-- Contact Number
+- Contact Number Field
   - changes it to a valid E164 Formatted number, and reports if it was provided
-- Email 
+- Email Field
   - checks each supplied email address, (you can test by delimiting emailaddresses with either , or ;    
   - it also checks if the email address is in a valid format and it then checks if the domain exists and reports back on that.
-- Join Date
+- Join Date Field
   - Important
     - Assumes DD/MM/YYYY for dates where MM > 12
     - Assumes MM/DD/YYYY for dates where DD <= 12
     - Converts Excel Date (float) values
+    
+- The Secion header currently only assumes "Gauteng:","KZN" and "CPT"
+
+- The /uploads folder needs to be writable
 
 
 ## Live Demo
